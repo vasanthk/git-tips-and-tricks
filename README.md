@@ -1,5 +1,5 @@
-# Git-Tips-And-Tricks
-Git Cheatsheet with Tips and Tricks
+# Git: Tips And Tricks
+Git Cheatsheet with a few nifty tips and tricks
 
 ### Git log (Pretty graph view)
 ```git log --graph; ``` 
@@ -20,6 +20,7 @@ By making the following alias you get:
 And every time you need to see your log, just type in
 
 ```git lg```
-Or, if you want to see the lines that changed
+
+or, if you want to see the lines that changed
 
 ```git lg -p```
