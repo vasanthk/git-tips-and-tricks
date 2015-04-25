@@ -24,3 +24,11 @@ And every time you need to see your log, just type in
 or, if you want to see the lines that changed
 
 ```git lg -p```
+
+### Stash
+git stash								                  : Stash current changes
+git stash save “appropriate caption here”	: Name stashed changes
+git stash apply							              : Apply the last stashed item
+git stash pop							                : Apply and drop most recent stash
+git stash list							              : List all stashes
+git stash clear							              : Clear all entries in stash
