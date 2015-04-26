@@ -40,4 +40,6 @@ or, if you want to see the lines that changed
 
 ### Forget added files in git
 
-```git rm -r --cached .``` then ```git add .``` 
+```git rm -r --cached .```
+
+```git add .``` 
