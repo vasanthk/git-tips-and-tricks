@@ -44,7 +44,7 @@ or, if you want to see the lines that changed
 
 ```git add .``` 
 
-#### Squash PR commits into one
+### Squash PR commits into one
 
 ```git fetch upstream```
 
