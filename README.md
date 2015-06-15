@@ -43,3 +43,21 @@ or, if you want to see the lines that changed
 ```git rm -r --cached .```
 
 ```git add .``` 
+
+#### Squash PR commits into one
+
+```git fetch upstream```
+
+```git checkout mybranch```
+
+```git merge upstream/master```
+     
+if necessary, resolve conflicts and git commit...
+     
+```git reset --soft upstream/master```
+
+```git commit -am 'Some cool description for a single commit'```
+
+```git push -f```
+     
+Note that it's super important that you merge before resetting, and that the argument is the same master branch. Otherwise you risk messing up your local history.
