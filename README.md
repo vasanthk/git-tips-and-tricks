@@ -46,13 +46,15 @@ or, if you want to see the lines that changed
 
 ### Squash PR commits into one
 
+Fetch from upstream (when merging clone to main upstream branch) or origin (when merging branch to master)
+
 ```git fetch upstream```
 
 ```git checkout mybranch```
 
 ```git merge upstream/master```
      
-if necessary, resolve conflicts and git commit...
+If necessary, resolve conflicts and git commit...
      
 ```git reset --soft upstream/master```
 
