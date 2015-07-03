@@ -2,7 +2,7 @@
 Git Cheatsheet with a few nifty tips and tricks
 
 ### Git log (Pretty graph view)
-```git log --graph; ``` 
+```git log --graph ``` 
 This displays your commits in a nice tree form.
 
 By making the following alias you get:
