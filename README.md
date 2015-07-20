@@ -44,6 +44,14 @@ or, if you want to see the lines that changed
 
 ```git add .``` 
 
+### Keeping a forked repo in sync with the main repo
+
+```git remote add upstream <path-to-the-main-repo>```
+
+```git fetch upstream```
+
+```git rebase upstream/master```
+
 ### Squash PR commits into one
 
 Fetch from upstream (when merging clone to main upstream branch) or origin (when merging branch to master)
