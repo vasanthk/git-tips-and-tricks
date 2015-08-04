@@ -44,6 +44,22 @@ or, if you want to see the lines that changed
 
 ```git add .``` 
 
+### Deleting a branch both locally and remotely
+
+##### Locally:
+
+```git branch -D local_branch_name```
+
+```-D``` force deletes, ```-d``` will give you a warning if it’s not already merged in.
+
+##### Remotely:
+ 
+```git push origin --delete remote_branch_name```
+
+(or)
+
+```git push origin :remote_branch_name```
+
 ### Keeping a forked repo in sync with the main repo
 
 ```git remote add upstream <path-to-the-main-repo>```
