@@ -68,6 +68,26 @@ or, if you want to see the lines that changed
 
 ```git rebase upstream/master```
 
+### Different branch name for local and remote
+
+Branch out locally:
+
+```git checkout -d local_branch_name```
+
+Checkout branch with an easy to remember local_branch_name
+
+Push to remote:
+
+```git push origin local_branch_name:remote_branch_name```
+
+Push the local branch to remote repo with a different descriptive name remote_branch_name
+
+```git branch —set-upstream-to=origin/remote_branch_name```
+
+Set your push.default to upstream to push branches to their upstreams (which is the same that pull will pull from), rather than pushing branches to ones matching in name (which is the default setting for push.default, matching).
+
+```git config push.default upstream```
+
 ### Squash PR commits into one
 
 Fetch from upstream (when merging clone to main upstream branch) or origin (when merging branch to master)
