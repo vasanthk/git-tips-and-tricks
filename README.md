@@ -72,7 +72,7 @@ or, if you want to see the lines that changed
 
 Branch out locally:
 
-```git checkout -d local_branch_name```
+```git checkout -b local_branch_name```
 
 Checkout branch with an easy to remember local_branch_name
 
