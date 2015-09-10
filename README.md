@@ -82,7 +82,7 @@ Push to remote:
 
 Push the local branch to remote repo with a different descriptive name remote_branch_name
 
-```git branch —set-upstream-to=origin/remote_branch_name```
+```git branch --set-upstream-to=origin/remote_branch_name```
 
 Set your push.default to upstream to push branches to their upstreams (which is the same that pull will pull from), rather than pushing branches to ones matching in name (which is the default setting for push.default, matching).
 
