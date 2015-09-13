@@ -110,4 +110,4 @@ Note that it's super important that you merge before resetting, and that the arg
 
 ###Git aliases
 
-git confg --global alias.l "log --oneline --graph" 
+``git config --global alias.l "log --oneline --graph"``
