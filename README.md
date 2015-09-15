@@ -108,6 +108,12 @@ If necessary, resolve conflicts and git commit...
      
 Note that it's super important that you merge before resetting, and that the argument is the same master branch. Otherwise you risk messing up your local history.
 
-###Git aliases
+### Git aliases
 
 ``git config --global alias.l "log --oneline --graph"``
+
+### Keeping a forked repo in sync with the main repo
+
+``git remote add upstream <path-to-the-main-repo>``
+``git fetch upstream``
+``git rebase upstream/master``
