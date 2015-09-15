@@ -115,5 +115,7 @@ Note that it's super important that you merge before resetting, and that the arg
 ### Keeping a forked repo in sync with the main repo
 
 ``git remote add upstream <path-to-the-main-repo>``
+
 ``git fetch upstream``
+
 ``git rebase upstream/master``
