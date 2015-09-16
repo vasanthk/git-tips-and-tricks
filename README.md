@@ -119,3 +119,13 @@ Note that it's super important that you merge before resetting, and that the arg
 ``git fetch upstream``
 
 ``git rebase upstream/master``
+
+### Deleting last commit from git
+
+If you already pushed, use ``git revert``
+
+If no one else is using your branch:
+
+``git reset —hard HEAD~1 (or) git reset —hard <sha1-commit-id>``
+
+``git push origin HEAD —force``
