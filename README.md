@@ -38,6 +38,12 @@ or, if you want to see the lines that changed
 
 ```git stash clear```							              : Clear all entries in stash
 
+### Cherry pick and apply to current branch
+
+```git cherry-pick ###SHA-1##```
+
+In cases picking one single commit is not enough and you need, let's say three consecutive commits - rebase is the right tool, not cherry-pick. 
+
 ### Forget added files in git
 
 ```git rm -r --cached .```
