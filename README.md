@@ -50,6 +50,12 @@ In cases picking one single commit is not enough and you need, let's say three c
 
 ```git add .``` 
 
+### Git Aliases
+
+```git config --global alias.<handle> <command>```
+ 
+```git config --global alias.st status```
+
 ### Deleting a branch both locally and remotely
 
 ##### Locally:
