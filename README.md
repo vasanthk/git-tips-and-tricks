@@ -88,9 +88,9 @@ Branch out locally:
 
 Checkout branch with an easy to remember local_branch_name
 
-Push to remote:
+Push to remote & set upstream:
 
-```git push origin local_branch_name:remote_branch_name```
+```git push -u origin local_branch_name:remote_branch_name```
 
 Push the local branch to remote repo with a different descriptive name remote_branch_name
 
