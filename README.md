@@ -65,6 +65,12 @@ In cases picking one single commit is not enough and you need, let's say three c
 ```-D``` force deletes, ```-d``` will give you a warning if it’s not already merged in.
 
 ##### Remotely:
+
+We also delete the remote branch by simply adding the "-r" flag to the "-d" option
+
+```git branch -dr origin/remote_branch_name```
+
+(or)
  
 ```git push origin --delete remote_branch_name```
 
