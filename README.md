@@ -2,7 +2,7 @@
 Git Cheatsheet with a few nifty tips and tricks
 
 ### Git log (Pretty graph view)
-```git log --graph ``` 
+```git log --graph ```
 This displays your commits in a nice tree form.
 
 By making the following alias you get:
@@ -42,18 +42,18 @@ or, if you want to see the lines that changed
 
 ```git cherry-pick ###SHA-1##```
 
-In cases picking one single commit is not enough and you need, let's say three consecutive commits - rebase is the right tool, not cherry-pick. 
+In cases picking one single commit is not enough and you need, let's say three consecutive commits - rebase is the right tool, not cherry-pick.
 
 ### Forget added files in git
 
 ```git rm -r --cached .```
 
-```git add .``` 
+```git add .```
 
 ### Git Aliases
 
 ```git config --global alias.<handle> <command>```
- 
+
 ```git config --global alias.st status```
 
 ### Deleting a branch both locally and remotely
@@ -71,7 +71,7 @@ We also delete the remote branch by simply adding the "-r" flag to the "-d" opti
 ```git branch -dr origin/remote_branch_name```
 
 (or)
- 
+
 ```git push origin --delete remote_branch_name```
 
 (or)
@@ -115,9 +115,9 @@ Fetch from upstream (when merging clone to main upstream branch) or origin (when
 ```git checkout mybranch```
 
 ```git merge upstream/master```
-     
+
 If necessary, resolve conflicts and git commit...
-     
+
 ```git reset --soft upstream/master```
 
 ```git commit -am 'Some cool description for a single commit'```
@@ -134,19 +134,11 @@ The --soft parameter tells Git to reset HEAD to another commit, but that’s it.
 
 ```git checkout {local-branch-name-to-test}```
 
-``{pull-request-id}`` can be obtained from the pull request url ``repo-url/pull/pull-request-id`` format 
+``{pull-request-id}`` can be obtained from the pull request url ``repo-url/pull/pull-request-id`` format
 
 ### Git aliases
 
 ``git config --global alias.l "log --oneline --graph"``
-
-### Keeping a forked repo in sync with the main repo
-
-``git remote add upstream <path-to-the-main-repo>``
-
-``git fetch upstream``
-
-``git rebase upstream/master``
 
 ### Deleting last commit from git
 
