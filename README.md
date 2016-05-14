@@ -80,11 +80,25 @@ We also delete the remote branch by simply adding the "-r" flag to the "-d" opti
 
 ### Keeping a forked repo in sync with the main repo
 
+# Add the remote, call it "upstream":
+
 ```git remote add upstream <path-to-the-main-repo>```
+
+# Fetch all the branches of that remote into remote-tracking branches, such as upstream/master:
 
 ```git fetch upstream```
 
+# Make sure that you're on your master branch:
+
+```git checkout master```
+
+# Rewrite your master branch so that any commits of yours that aren't already in upstream/master are replayed on top of that other branch:
+
 ```git rebase upstream/master```
+
+# If you've rebased your branch onto upstream/master you may need to force the push in order to push it to your own forked repository.
+
+```git push -f origin master```
 
 ### Different branch name for local and remote
 
