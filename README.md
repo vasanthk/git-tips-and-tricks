@@ -163,3 +163,17 @@ If no one else is using your branch:
 ``git reset —hard HEAD~1 (or) git reset —hard <sha1-commit-id>``
 
 ``git push origin HEAD —force``
+
+### Fetch all Git branches from remote
+
+You will need to create local branches tracking remote branches.
+
+Assuming that you've got only one remote called origin, this snippet will create local branches for all remote tracking ones:
+
+``for b in `git branch -r | grep -v -- '->'`; do git branch --track ${b##origin/} $b; done``
+
+After that, ``git fetch --all`` will update all local copies of remote branches.
+
+Also, ``git pull --all`` will update your local tracking branches, but depending on your local commits and how the 'merge' configure option is set it might create a merge commit, fast-forward or fail.
+
+
