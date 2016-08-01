@@ -142,6 +142,8 @@ Note that it's super important that you merge before resetting, and that the arg
 
 The --soft parameter tells Git to reset HEAD to another commit, but that’s it. If you specify --soft Git will stop there and nothing else will change. What this means is that the index and working copy don’t get touched, so all of the files that changed between the original HEAD and the commit you reset to appear to be staged.
 
+*Extra:* To squash last few commits (eg. last 2 commits) use ```git reset --soft HEAD~2```
+
 ### Test a pull request in your local before merging
 
 ```git fetch origin pull/{pull-request-id}/head:{local-branch-name-to-test}```
