@@ -144,6 +144,43 @@ The --soft parameter tells Git to reset HEAD to another commit, but that’s it.
 
 *Extra:* To squash last few commits (eg. last 2 commits) use ```git reset --soft HEAD~2```
 
+### Bumping version and publishing upstream's branch (when you already have a fork)
+
+Fetch all the upstream branches
+
+```git fetch upstream && git reset --hard upstream/master```
+
+Lists all the remote branches
+
+```git branch -v -a```
+
+From that list choose whichever branch you need to checkout
+
+```git checkout remotes/upstream/master```
+
+In the message being shown - verify to make sure the HEAD is at the most recent commit in that branch. Example shown below
+
+```
+HEAD is now at 8c9d3eb... 6.3.1
+➜  user git:(8c9d3eb)
+```
+
+Now bump the package.json version
+
+```npm version patch```
+
+You'll need to push it to remote upstream along with the tags.
+
+```git push upstream HEAD:master && git push upstream --tags```
+
+Finally, publish the package
+
+```npm publish```
+
+**IMPORTANT:** HEAD is now in a detatched state. So without fail switch back to your working branch!
+
+```git checkout develop```
+
 ### Test a pull request in your local before merging
 
 ```git fetch origin pull/{pull-request-id}/head:{local-branch-name-to-test}```
