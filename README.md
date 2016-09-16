@@ -228,4 +228,10 @@ After that, ``git fetch --all`` will update all local copies of remote branches.
 
 Also, ``git pull --all`` will update your local tracking branches, but depending on your local commits and how the 'merge' configure option is set it might create a merge commit, fast-forward or fail.
 
+### Fetch a branch from someone else's fork
 
+``git remote add theirusername git@github.com:theirusername/reponame.git``
+
+``git fetch theirusername``
+
+``git checkout -b mynamefortheirbranch theirusername/theirbranch``
