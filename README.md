@@ -14,6 +14,7 @@ Git Cheatsheet with a few nifty tips and tricks
 * [Test a pull request in your local before merging](#test-a-pull-request-in-your-local-before-merging)
 * [Deleting last commit from git](#deleting-last-commit-from-git)
 * [Fetch all Git branches from remote](#fetch-all-git-branches-from-remote)
+* [Fetch a branch from someone else's fork](#fetch-a-branch-from-someone-elses-fork)
 
 ### Git log (Pretty graph view)
 ```git log --graph ```
