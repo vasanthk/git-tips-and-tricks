@@ -56,6 +56,9 @@ In cases picking one single commit is not enough and you need, let's say three c
 
 ```git config --global alias.st status```
 
+```git config --global alias.l "log --oneline --graph"```
+
+
 ### Deleting a branch both locally and remotely
 
 ##### Locally:
@@ -188,10 +191,6 @@ Finally, publish the package
 ```git checkout {local-branch-name-to-test}```
 
 ``{pull-request-id}`` can be obtained from the pull request url ``repo-url/pull/pull-request-id`` format
-
-### Git aliases
-
-``git config --global alias.l "log --oneline --graph"``
 
 ### Deleting last commit from git
 
