@@ -231,7 +231,7 @@ Also, ``git pull --all`` will update your local tracking branches, but depending
 
 ### Fetch a branch from someone else's fork
 
-``git remote add theirusername git@github.com:theirusername/reponame.git``
+``git remote add theirusername https://github.com/theirusernam/reponame.git``
 
 ``git fetch theirusername``
 
