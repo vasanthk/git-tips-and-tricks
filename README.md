@@ -1,6 +1,20 @@
 # Git: Tips And Tricks
 Git Cheatsheet with a few nifty tips and tricks
 
+* [Git log (Pretty graph view)](#git-log-pretty-graph-view)
+* [Stash](#stash)
+* [Cherry pick and apply to current branch](#cherry-pick-and-apply-to-current-branch)
+* [Forget added files in git](#forget-added-files-in-git)
+* [Git Aliases](#git-aliases)
+* [Deleting a branch both locally and remotely](#deleting-a-branch-both-locally-and-remotely)
+* [Keeping a forked repo in sync with the main repo](#keeping-a-forked-repo-in-sync-with-the-main-repo-command-linegithub)
+* [Different branch name for local and remote](#different-branch-name-for-local-and-remote)
+* [Squash PR commits into one](#squash-pr-commits-into-one)
+* [Bumping version and publishing upstream's branch (when you already have a fork)](#bumping-version-and-publishing-upstreams-branch-when-you-already-have-a-fork)
+* [Test a pull request in your local before merging](#test-a-pull-request-in-your-local-before-merging)
+* [Deleting last commit from git](#deleting-last-commit-from-git)
+* [Fetch all Git branches from remote](#fetch-all-git-branches-from-remote)
+
 ### Git log (Pretty graph view)
 ```git log --graph ```
 This displays your commits in a nice tree form.
