@@ -154,7 +154,7 @@ If necessary, resolve conflicts and git commit...
 
 ```git commit -am 'Some cool description for a single commit'```
 
-```git push --force-with-lease```
+```git push [--force-with-lease](https://developer.atlassian.com/blog/2015/04/force-with-lease/)```
 
 Note that it's super important that you merge before resetting, and that the argument is the same master branch. Otherwise you risk messing up your local history.
 
