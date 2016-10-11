@@ -154,9 +154,9 @@ If necessary, resolve conflicts and git commit...
 
 ```git commit -am 'Some cool description for a single commit'```
 
-```git push [--force-with-lease](https://developer.atlassian.com/blog/2015/04/force-with-lease/)```
+```git push --force-with-lease```
 
-Note that it's super important that you merge before resetting, and that the argument is the same master branch. Otherwise you risk messing up your local history.
+More on `--force-with-lease` option [here]((https://developer.atlassian.com/blog/2015/04/force-with-lease/)). Note that it's super important that you merge before resetting, and that the argument is the same master branch. Otherwise you risk messing up your local history.
 
 The --soft parameter tells Git to reset HEAD to another commit, but that’s it. If you specify --soft Git will stop there and nothing else will change. What this means is that the index and working copy don’t get touched, so all of the files that changed between the original HEAD and the commit you reset to appear to be staged.
 
