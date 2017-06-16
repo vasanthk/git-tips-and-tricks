@@ -15,7 +15,7 @@ Git Cheatsheet with a few nifty tips and tricks
 * [Deleting last commit from git](#deleting-last-commit-from-git)
 * [Fetch all Git branches from remote](#fetch-all-git-branches-from-remote)
 * [Fetch a branch from someone else's fork](#fetch-a-branch-from-someone-elses-fork)
-* [Deleting branch from fork and then re-creating it with same from upstream]
+* [Deleting branch from fork and then re-creating it with same from upstream](#deleting-branch-from-fork-and-then-re-creating-it-with-same-from-upstream)
 
 ### Git log (Pretty graph view)
 ```git log --graph ```
