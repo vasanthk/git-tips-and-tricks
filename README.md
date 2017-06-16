@@ -15,6 +15,7 @@ Git Cheatsheet with a few nifty tips and tricks
 * [Deleting last commit from git](#deleting-last-commit-from-git)
 * [Fetch all Git branches from remote](#fetch-all-git-branches-from-remote)
 * [Fetch a branch from someone else's fork](#fetch-a-branch-from-someone-elses-fork)
+* [Deleting branch from fork and then re-creating it with same from upstream]
 
 ### Git log (Pretty graph view)
 ```git log --graph ```
@@ -236,3 +237,23 @@ Also, ``git pull --all`` will update your local tracking branches, but depending
 ``git fetch theirusername``
 
 ``git checkout -b mynamefortheirbranch theirusername/theirbranch``
+
+### Deleting branch from fork and then re-creating it with same from upstream
+
+Delete Local Branch
+
+``git branch -D <branch_name>``
+
+Delete Remote Branch
+
+``git push origin --delete <branch_name>``
+
+Create branch from upstream
+
+``git checkout -b <branch_name> upstream/<branch_name>``
+
+Push branch to remote
+
+``git push -u origin <branch_name>``
+
+
