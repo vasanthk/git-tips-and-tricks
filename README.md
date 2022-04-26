@@ -257,7 +257,7 @@ Push branch to remote
 ``git push -u origin <branch_name>``
 
 
-### Keep & Manage different project sources in she current repository `git subtree`
+### Keep & Manage different project sources in the current repository using `git subtree`
 
 You are in the your project directory which need use external sources!
 
@@ -275,7 +275,7 @@ to update old code in subtree from original repository
 ``git subtree pull -P <alias_name> --squash <root_project_https_url> <project_branch>``
 
 
-### Keep & Manage different project sources in she current repository externally `git submodule`
+### Keep & Manage different project sources in the current repository externally using `git submodule`
 
 You are in the your project directory which need use external sources!
 
