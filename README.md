@@ -307,4 +307,9 @@ To clone project with submodule sources
 git clone --recurse <main_project_repo>
 ```
 
+In case you've cloned project without `--recurse` flag you will not have submodule data in your repository.
+To load required data you need try next instruction:
+```
+git submodule update --init --recursive
+```
 
