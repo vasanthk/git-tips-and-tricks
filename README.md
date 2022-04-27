@@ -257,3 +257,59 @@ Push branch to remote
 ``git push -u origin <branch_name>``
 
 
+### Keep & Manage different project sources in the current repository using `git subtree`
+
+You are in the your project directory which need use external sources!
+
+Add / map external sources to folder `<alias_name>`:
+```
+git subtree add --prefix=<alias_name> <root_project_https_url> <project_branch>
+```
+or with minimal history log:
+```
+git subtree add --prefix=<alias_name> --squash <root_project_https_url> <project_branch>
+```
+
+to revert some commits back (for example we need `2358acd7` commit which is behind current one in the subtree project)
+
+```
+git subtree merge -P <alias_name> --squash 2358acd7
+```
+
+to update old code in subtree from original repository
+
+```
+git subtree pull -P <alias_name> --squash <root_project_https_url> <project_branch>
+```
+
+
+### Keep & Manage different project sources in the current repository externally using `git submodule`
+
+You are in the your project directory which need use external sources!
+
+Add / map external sources:
+```
+git submodule add <project_repo>
+```
+
+Pull updated code from submodule repository
+```
+git submodule update --remote
+```
+
+Reset submodule code to initial state
+```
+git pull --update --resource-submodules
+```
+
+To clone project with submodule sources
+```
+git clone --recurse <main_project_repo>
+```
+
+In case you've cloned project without `--recurse` flag you will not have submodule data in your repository.
+To load required data you need try next instruction:
+```
+git submodule update --init --recursive
+```
+
